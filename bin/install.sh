@@ -38,7 +38,9 @@ echo "- Now, let's configure the execution file..."
 	{
 		pwd=$(pwd)
 		user=$(whoami)
-
+		read -r -p "${1:-- Digite sua matrícula? [Yes/No]} " matricula
+		sed -i "s/matriculaUser/$matricula/g;" ../usr/leda.sh 	
+	
 		cp ~/LEDA-AUTO-SEND/usr/leda ~/.local/bin
 		mv ~/LEDA-AUTO-SEND ~/.local/etc
 

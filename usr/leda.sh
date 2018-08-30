@@ -2,7 +2,7 @@
 
 read -p "Roteiro: " roteiro
 
-matricula='117210400'
+matricula='matriculaUser'
 
 wget -O "$roteiro.zip" --post-data="id=$roteiro&matricula=$matricula" http://150.165.85.29:81/download
 unzip  "$roteiro.zip" -d "$roteiro"
