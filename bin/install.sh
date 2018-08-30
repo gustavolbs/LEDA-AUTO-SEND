@@ -8,13 +8,13 @@ rm -rf ~/.local/bin/leda
 rm -rf ~/.local/etc/LEDA-AUTO-SEND
 
 echo "# These Comands was added by LEDA-AUTO-SEND" >> ~/.bashrc
-echo "alias atgit='/home/$(whoami)/.local/bin/leda'" >> ~/.bashrc
+echo "alias leda='/home/$(whoami)/.local/bin/leda'" >> ~/.bashrc
 echo "# Finished the commands of LEDA-AUTO-SEND" >> ~/.bashrc
 echo "" >> ~/.bashrc 
 source ~/.bashrc
 	
 echo "# These Comands was added by LEDA-AUTO-SEND" >> ~/.zshrc
-echo "alias atgit='/home/$(whoami)/.local/bin/lead'" >> ~/.zshrc
+echo "alias leda='/home/$(whoami)/.local/bin/leda'" >> ~/.zshrc
 echo "# Finished the commands of LEDA-AUTO-SEND" >> ~/.zshrc
 echo "" >> ~/.zshrc
 source ~/.zshrc

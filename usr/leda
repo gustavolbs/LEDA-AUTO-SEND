@@ -14,7 +14,10 @@ case $1 in
 		echo "'leda -v' to see LEDA-AUTO-SEND version that you're using"
 		exit 0
 	;;
-	"-v") ~/.local/etc/LEDA-AUTO-SEND/usr/LEDA.sh
+	"-v") "leda v1.0.5"
 	;;
+	*) ~/.local/etc/LEDA-AUTO-SEND/usr/leda.sh
+		exit 0
+	;;	
 esac
 
