@@ -3,12 +3,16 @@
 read -r -p "${1:--Are you sure you want to uninstall LEDA-AUTO-SEND? [Yes/No]} " response
 case "$response" in [yY][eE][sS]|[yY])
 	{
-		pwd=$(pwd)
-		user=$(whoami)
-		
 		cd
 		rm -fr ~/.local/bin/leda 
 		rm -fr ~/.local/etc/LEDA-AUTO-SEND
+		sed -i "s/# These Comands was added by LEDA-AUTO-SEND//g;" ~/.bashrc
+		sed -i "/leda/d" ~/.bashrc
+		sed -i "s/# Finished the commands of LEDA-AUTO-SEND//g;" ~/.bashrc
+
+		sed -i "s/# These Comands was added by LEDA-AUTO-SEND//g;" ~/.zshrc
+		sed -i "/leda/d" ~/.zshrc
+		sed -i "s/# Finished the commands of LEDA-AUTO-SEND//g;" ~/.zshrc
 		echo "- LEDA-AUTO-SEND was removed"
 			
 	} || {
@@ -16,3 +20,4 @@ case "$response" in [yY][eE][sS]|[yY])
 	}
 esac
 
+exit
