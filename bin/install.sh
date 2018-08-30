@@ -3,7 +3,6 @@
 echo '- Welcome to the LEDA-AUTO-SEND installation wizard'
 echo
 
-
 rm -rf ~/.local/bin/leda 
 rm -rf ~/.local/etc/LEDA-AUTO-SEND
 
@@ -28,8 +27,6 @@ mkdir bin
 cd
 echo "- Now, let's configure the execution file..." 
 
-pwd=$(pwd)
-user=$(whoami)
 read -r -p "${1:-- Digite sua matrícula: } " matricula
 sed -i "s/matriculaUser/$matricula/g;" ~/LEDA-AUTO-SEND/usr/leda.sh 	
 
