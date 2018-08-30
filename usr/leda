@@ -1,0 +1,16 @@
+#! /bin/bash
+
+case $1 in 
+	"-u") ~/.local/etc/LEDA-AUTO-SEND/bin/update.sh
+		exit 0
+	;;
+	"-h") echo "To use LEDA-AUTO-SEND, just run 'leda' on terminal. You can use the commands:"
+		echo "'leda -h' to get help on how to use LEDA-AUTO-SEND."
+		echo "'leda -u' to update the LEDA-AUTO-SEND to the latest version."
+		echo "'leda -v' to see LEDA-AUTO-SEND version that you're using"
+		exit 0
+	;;
+	"-v") ~/.local/etc/LEDA-AUTO-SEND/usr/LEDA.sh
+	;;
+esac
+
