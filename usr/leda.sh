@@ -10,6 +10,5 @@ rm -rf "$roteiro.zip"
 
 sed -i "s/INSIRA SEU NUMERO DE MATRICULA/$matricula/g;s/RRX-0X/$roteiro/g" "$roteiro"/pom.xml 
 cd $roteiro
-mvn package -Dmaven.test.skip=true
-
+mvn install -DskipTests
 exit 0
