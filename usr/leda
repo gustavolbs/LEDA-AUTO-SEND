@@ -1,5 +1,5 @@
 #! /bin/bash
-
+#Usr 
 case $1 in 
 	"-u") ~/.local/etc/LEDA-AUTO-SEND/bin/update.sh
 		exit 0
