@@ -41,3 +41,5 @@ leda -u
    To use LEDA-AUTO-SEND, make sure you are in your maven project, just run the ```leda``` command on the terminal and then perform the actions you want to.
 
 MADE BY @gustavolbs
+
+# Enjoy it
